@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+    <title>Géneros</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    
+    <header>
+        <nav class="barraNav">
+            <div class="logoMenu">
+                <a href="./index.html#menuInferior"><img src="./img/menu.png" alt="menu"></a>
+            </div>
+            <div class="novaLogo">
+                <a href="index.html"><img src="./img/novaLogo.png" alt="Logo NOVA"></a>
+            </div>
+            <div class="logoBuscar">
+                <a href="search-results.html"><img src="./img/search.png" alt="buscar"></a>
+            </div>
+        </nav>
+    
+        <nav class="headerDesktop">
+            <div class="novaLogo">
+                <a href="index.html"><img src="./img/novaLogo.png" alt="Logo NOVA"></a>
+            </div>
+
+            <div class="menuDesktop">
+                <ul>
+                    <li> <a href="index.html">Home |</a> </li>
+                    <li> <a href="favorite.html">Favoritos |</a> </li>
+                    <li> <a href="genres.html">Géneros |</a> </li>
+                </ul>
+                <form action="./search-results.html" method="GET" class="formBusqueda">
+                    <input type="text" name="search" value="" placeholder="Búsqueda" class="search">
+                </form> 
+                <p class="message"></p>
+            </div>
+        </nav>
+
+        <form action="./search-results.html" method="GET" class="formBusquedaMobile">
+            <input type="text" name="search" value="" placeholder="Búsqueda" class="search"> 
+        </form> 
+        <p class="message"></p>
+
+    </header>
+     
+            <main>
+                <!-- falta linkear especificamente a la parte de los genero details -->
+                <section>
+                    <h1 class="GenerosTitulo"> Géneros de Películas</h1>
+                </section>
+                <section class="GenerosPopulares ">
+                    <ul class="generosP">
+
+                    </ul>
+                </section>
+                <section>
+                    <h1 class="GenerosTitulo"> Géneros de Series</h1>
+                </section>
+                <section class="GenerosPopulares ">
+                    <ul class="generosTV">
+                        
+                    </ul>
+                </section>
+                    <!-- <article>
+                        <h3 class="generostipos"> Acción </h3>
+                        <div class="photo-container">
+                            <a href="./detailGenres.html"> <img class="fotogenero" src="" alt="Accion"></a>
+                        </div>
+                    </article>
+
+                    <article>
+                        <h3 class="generostipos"> Comedia </h3>
+                        <div class="photo-container">
+                            <a href="./detailGenres.html"> <img class="fotogenero" src="" alt="Comedia"></a>
+                        </div>
+                    </article>
+                    
+                    <article>
+                        <h3 class="generostipos"> Fantasía </h3>
+                        <div class="photo-container">
+                            <a href="./detailGenres.html"> <img class="fotogenero" src="" alt="Fantasia"></a>
+                        </div>
+                    </article>
+    
+                    <article>
+                        <h3 class="generostipos"> Animación </h3>
+                        <div class="photo-container">
+                            <a href="./detailGenres.html"> <img class="fotogenero" src="" alt="Animacion"></a>
+                        </div>
+                    </article> -->
+                
+         
+            <nav id="menuInferior">
+                <ul class="menuMobile">
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="genres.html"><li>Géneros</li></a>
+                    <a href="favorite.html"><li>Favoritos</li></a>
+                </ul>
+            </nav>
+    
+        <footer class="FooterTodo">  
+                <ul class="LinkedinLista"> 
+                    <li><a href="https://www.linkedin.com/in/delfina-galarza-69b853207/" target="_blanck">Delfina Galarza |</a></li>
+                    <li><a href="https://www.linkedin.com/in/i%C3%B1aki-valencia-918555207" target="_blanck">Iñaki Valencia |</a></li>
+                    <li><a href="https://www.linkedin.com/in/maria-vaccario-833439212/" target="_blanck">Maria Vaccario</a></li>
+                </ul> 
+                
+                <a href="https://www.themoviedb.org/?language=es" target="_blanck" class="tmdbLogoFooterMobile"><img src="./img/tmdb_logo.svg" alt="TMDB Logo"></a>
+    
+                <a href="https://www.themoviedb.org/?language=es" target="_blanck" class="tmdbLogoDesktop"><img src="./img/tmdb_logo_desktop.svg" alt="TMDB Logo"></a>
+        </footer>
+        
+         <script src="./JS/genres.js"></script>
+</body>
+</html>

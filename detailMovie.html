@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+    <title>Películas</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="barraNav">
+            <div class="logoMenu">
+                <a href="./index.html#menuInferior"><img src="./img/menu.png" alt="menu"></a>
+            </div>
+            <div class="novaLogo">
+                <a href="index.html"><img src="./img/novaLogo.png" alt="Logo NOVA"></a>
+            </div>
+            <div class="logoBuscar">
+                <a href="search-results.html"><img src="./img/search.png" alt="buscar"></a>
+            </div>
+        </nav>
+    
+        <nav class="headerDesktop">
+            <div class="novaLogo">
+                <a href="index.html"><img src="./img/novaLogo.png" alt="Logo NOVA"></a>
+            </div>
+
+            <div class="menuDesktop">
+                <ul>
+                    <li> <a href="index.html">Home |</a> </li>
+                    <li> <a href="favorite.html">Favoritos |</a> </li>
+                    <li> <a href="genres.html">Géneros |</a> </li>
+                </ul>
+                <form action="./search-results.html" method="GET" class="formBusqueda">
+                    <input type="text" name="search" value="" placeholder="Búsqueda" class="search">
+                </form> 
+                <p class="message"></p>
+            </div>
+        </nav>
+
+        <form action="./search-results.html" method="GET" class="formBusquedaMobile">
+            <input type="text" name="search" value="" placeholder="Búsqueda" class="search"> 
+        </form> 
+        <p class="message"></p>
+
+    </header>
+        
+        <main>
+        <section>
+            <h1 class="tituloPrincipal">Detalle de películas</h1>
+        </section>
+
+        <section class="peliculasSeriesDetalle">
+            <article class="photo-container">
+                <img src="" alt="" class="fotoDetail">
+            </article>
+            <article class="datos">
+                <h3 class="tituloDetail"></h3>
+                <hr class="linea">
+                <p class="rating"></p>
+                <hr class="linea">
+                <p class="first_air_date"></p>
+                <hr class="linea">
+                <p class="duracion"> </p>
+                <hr class="linea">
+                <a href="./detailGenres.html" class="linkeado"><p class="genero"> Género: </p></a>
+                <hr class="linea">
+                <p class="overview"> </p>
+                <hr class="linea">
+                <p><a href="./favorite.html" ><button type="button" class="agregarFavoritosP">Agregar a favoritos</button></a></p>
+            </article>
+        </section>
+
+        <nav id="menuInferior">
+            <ul class="menuMobile">
+                <a href="index.html"><li>Home</li></a>
+                <a href="genres.html"><li>Géneros</li></a>
+                <a href="favorite.html"><li>Favoritos</li></a>
+            </ul>
+        </nav>
+    </div>
+    
+    <<footer class="FooterTodo">  
+        <ul class="LinkedinLista"> 
+            <li><a href="https://www.linkedin.com/in/delfina-galarza-69b853207/" target="_blanck">Delfina Galarza |</a></li>
+            <li><a href="https://www.linkedin.com/in/i%C3%B1aki-valencia-918555207" target="_blanck">Iñaki Valencia |</a></li>
+            <li><a href="https://www.linkedin.com/in/maria-vaccario-833439212/" target="_blanck">Maria Vaccario</a></li>
+        </ul> 
+        
+        <a href="https://www.themoviedb.org/?language=es" target="_blanck" class="tmdbLogoFooterMobile"><img src="./img/tmdb_logo.svg" alt="TMDB Logo"></a>
+
+        <a href="https://www.themoviedb.org/?language=es" target="_blanck" class="tmdbLogoDesktop"><img src="./img/tmdb_logo_desktop.svg" alt="TMDB Logo"></a>
+    </footer>
+    
+    </main>
+    <script src="./JS/detailMovie.js"></script>
+</body>
+</html>
