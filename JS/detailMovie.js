@@ -21,7 +21,7 @@ fetch(url)
 
         let generos = '';
         for (let i=0; i<data.genres.length; i++){
-            generos += `<span> ${data.genres[i].name}, </span>`
+            generos += `<a href=detailGenres.html?id=${data.genres[i].id}&genres=${data.genres[i].name}><span>${data.genres[i].name}, </span></a>`
             console.log(generos);
         }
 
@@ -49,7 +49,7 @@ fetch(url)
         favoritos = JSON.parse(recuperoStorage);
     }
 
-    let botonFav = document.querySelector('.agregarFavoritosP');
+    let botonFav = document.querySelector('.agregarFavoritos');
 
     if (favoritos.includes(id)){
         botonFav.innerText = "Quitar de favoritos";

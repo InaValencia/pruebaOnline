@@ -14,9 +14,11 @@ fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=c7d8a8e4054747c2b47
 
     let lista = ``
     for (let i=0; i<info.length; i++)
-    lista += `<li class="listaGeneros"><a href=detailGenres.html?id=${info[i].id}&genres=${info[i].name}>
-            <h3> ${info[i].name} </h3> 
-            </a> </li>`
+
+    lista += `<a href= detailGenres.html?id=${info[i].id}&genres=${info[i].name}  class="padreG">
+        <section>
+            <span class="listaGeneros"> ${info[i].name} </span> 
+            </section></a>`
     console.log (lista)
     generosP.innerHTML = lista
 
@@ -43,9 +45,10 @@ fetch(`https://api.themoviedb.org/3/genre/tv/list?api_key=c7d8a8e4054747c2b47d0f
 
     let lista = ``
     for (let i=0; i<info.length; i++)
-    lista += `<li class="listaGeneros"><a href= detailGenres.html?id=${info[i].id}>
-            <h3> ${info[i].name} </h3> 
-            </a> </li>`
+    lista += `<a href= detailGenres.html?id=${info[i].id}&genres=${info[i].name}  class="padreG">
+        <section>
+            <span class="listaGeneros"> ${info[i].name} </span> 
+            </section></a>`
     console.log (lista)
     generosTV.innerHTML = lista
 
